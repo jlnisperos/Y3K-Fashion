@@ -1,0 +1,486 @@
+@font-face 
+{
+    font-family: 'SplashChrome';
+    src: url('fonts/SplashChrome-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body 
+{
+    margin: 0;
+    background-image: url("images/back.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header 
+{
+    padding: 20px 40px 0 40px;
+}
+
+header h1 
+{
+    font-family: 'SplashChrome', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #dffbff 15%,
+        #c8d8ff 30%,
+        #f7c8ff 45%,
+        #fff2b8 60%,
+        #c7ffe9 75%,
+        #ffffff 100%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.45),
+        0 0 14px rgba(180, 220, 255, 0.35),
+        0 0 24px rgba(255, 200, 245, 0.25);
+
+    animation: iridescentShift 5s ease-in-out infinite;
+}
+
+@keyframes iridescentShift 
+{
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+nav 
+{
+    margin-top: 0;
+    padding: 0;
+}
+
+nav a 
+{
+    color: #e9ecff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    margin-right: 30px;
+    padding: 0;
+}
+
+nav a:hover 
+{
+    color: #ffffff;
+    text-shadow: 0 0 8px #fff;
+}
+
+.description 
+{
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+h3 
+{
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.6),
+        0 0 20px rgba(180,220,255,0.4);
+    margin-top: 50px;
+}
+
+.Featured-product
+{
+     background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #dffbff 15%,
+        #c8d8ff 30%,
+        #f7c8ff 45%,
+        #fff2b8 60%,
+        #c7ffe9 75%,
+        #ffffff 100%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.45),
+        0 0 14px rgba(180, 220, 255, 0.35),
+        0 0 24px rgba(255, 200, 245, 0.25);
+
+    animation: iridescentShift 5s ease-in-out infinite;
+}
+
+.product-grid-homever {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.product-card-homever {
+    text-align: center;
+}
+
+.product-card-homever img {
+    width: 280px;
+    border-radius: 15px;
+}
+
+.product-card-homever a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-card-homever a:hover {
+    color: #dffbff;
+}
+
+.product-card-homever img {
+    width: 280px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-grid
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+}
+
+.product-card 
+{
+    width: 250px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 20px;
+
+    transition: 0.3s ease;
+}
+
+.product-card:hover 
+{
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(255,255,255,0.2);
+}
+
+.product-card img 
+{
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.product-card p 
+{
+    margin-top: 15px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.product-card a 
+{
+    text-decoration: none;
+}
+
+#product-page 
+{
+    padding: 40px;
+    color: #f2f2f2;
+}
+
+#product-page img 
+{
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+#product-page h2 
+{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#product-page p 
+{
+    color: #dfe7ff;
+    font-size: 18px;
+    line-height: 1.6;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+#product-page strong 
+{
+    color: #ffffff;
+}
+
+#product-page > div 
+{
+    text-align: center;
+}
+
+#add-cart,
+.product-card button 
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.22),
+        rgba(190,220,255,0.12)
+    );
+
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 30px;
+
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,0.15);
+}
+
+#add-cart:hover,
+.product-card button:hover 
+{
+    transform: translateY(-3px) scale(1.05);
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.35),
+        rgba(180,220,255,0.25)
+    );
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,0.4);
+}
+
+#add-cart,
+.checkout-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(180,220,255,0.10));
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+#add-cart:hover,
+.checkout-btn:hover 
+{
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(255,255,255,0.25);
+}
+#cart-page 
+{
+    padding: 40px;
+    text-align: center;
+}
+
+#cart-page h2 
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.5),
+        0 0 16px rgba(180,220,255,0.3);
+}
+
+#cart-page ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+#cart-page li 
+{
+    margin: 15px 0;
+    padding: 18px 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    color: #f2f2f2;
+    font-size: 22px;
+}
+
+#cart-page a 
+{
+    color: #e9ecff;
+    text-decoration: none;
+}
+
+#cart-page a:hover 
+{
+    color: #ffffff;
+    text-shadow: 0 0 8px #fff;
+}
+
+#checkout-page 
+{
+    min-height: 70vh;
+    padding: 40px;
+    color: #f2f2f2;
+}
+
+.checkout-btn 
+{
+    display: inline-block;
+
+    margin-top: 20px;
+    margin-left: 15px;
+
+    padding: 12px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #dffbff,
+        #d8c8ff
+    );
+
+    color: #111;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    transition: .3s;
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.3);
+}
+
+#checkout-page > div 
+{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+#checkout-page h2 
+{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+#checkout-page p,
+#checkout-page li,
+#checkout-page label 
+{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#checkout-page label 
+{
+    display: block;
+    margin: 12px 0;
+}
+
+#checkout-page input[type="radio"] 
+{
+    margin-right: 8px;
+}
+
+#checkout-page input[type="text"],
+#checkout-page select 
+{
+    width: 100%;
+    max-width: 360px;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #111;
+}
+
+#checkout-page #card-details 
+{
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#checkout-page #verify-payment 
+{
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+    cursor: pointer;
+}
+
+#checkout-page #verify-payment:hover 
+{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f2f2f2;
+}
